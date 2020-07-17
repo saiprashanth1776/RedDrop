@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>main page</title>
+	<style type="text/css">
+		body {
+			background-image: url("wallpaper.jpg");
+			background-size: 100%;
+      font-family: 'Montserrat', Helvetica, sans-serif;
+		}
+
+    .button {
+  background: red;
+  border-radius: 100px;
+  padding: 20px 60px;
+  color: white;
+  text-decoration: none;
+  font-size: 1.45em;
+  margin: 0 15px;
+}
+
+/* Hover state animation applied here */
+.button:hover { 
+  -webkit-animation: hover 1200ms linear 2 alternate;
+  animation: hover 1200ms linear 2 alternate;
+  color: white;
+
+}
+
+/* Active state animation applied here */
+.button:active {
+  -webkit-animation: active 1200ms ease 1 alternate;
+  animation: active 1200ms ease 1 alternate; 
+  background: #5F9BE0;
+}
+.gray { background: #D2D2D2; }
+.gray:active { background: #b9b9b9; }
+
+@-webkit-keyframes active { 
+  0% {transform: scale(1,1);}
+  90% {transform: scale(.9,.88);}
+  100% {transform: scale(.92,.9);}
+}
+
+keyframes active { 
+  0% {transform: scale(1,1);}
+  90% {transform: scale(.9,.88);}
+  100% {transform: scale(.92,.9);}
+}
+
+	</style>
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- <link rel="stylesheet" href="D:/bb/styling.css">  -->
+</head>
+<body>
+  <div>
+	<nav class="navbar navbar-expand-lg navbar-light bg-dark">
+  <a class="navbar-brand" href="./login.html" style="color:white">Admin Login</a>
+</nav></div>
+<div>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <a href="donor.html" class="button" style="margin-left: 500px; text-decoration: none;">Donor</a>
+  <a href="recipient.html" class="button" style="margin-left: 50px; text-decoration: none;">Recipient</a>
+</div>
+
+</body>
+</html>
